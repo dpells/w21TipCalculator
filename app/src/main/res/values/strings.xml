@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">w21TipCalculator</string>
+    <string name="num_people_label">Number of People</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="tip_amount">Tip Amount</string>
+    <string name="tip_amount">Tip Amount</string>
+    <string name="total">Total</string>
+    <string name="tip_percent">Tip Percent</string>
+    <string name="one_person">1 Person</string>
+    <string name="two_people">2 People</string>
+    <string name="three_people">3 People</string>
+    <string name="four_people">4 People</string>
+    <string name="dollar">$</string>
+    <string name="total_per_person">Total per Person</string>
+</resources>
