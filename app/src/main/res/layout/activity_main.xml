@@ -8,21 +8,22 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- This is a comment -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/billAmountLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/bill_amount" />
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/billAmountEditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
+            android:ems="6"
             android:inputType="numberDecimal"
             android:hint="@string/dollar"/>
     </LinearLayout>
@@ -40,29 +41,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/tipPercentDec"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="-"
             tools:ignore="HardcodedText" />
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tipPercent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="20%"
             tools:ignore="HardcodedText" />
         <Button
-            android:id="@+id/button"
+            android:id="@+id/tipPercentInc"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="+"
             tools:ignore="HardcodedText" />
-
-
     </LinearLayout>
 
     <SeekBar
-        android:id="@+id/seekBar2"
+        android:id="@+id/percentSeekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="100"
@@ -79,7 +78,7 @@
             android:layout_height="wrap_content"
             android:text="@string/tip_amount" />
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tipAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="$0.00" />
@@ -96,7 +95,7 @@
             android:layout_height="wrap_content"
             android:text="@string/total" />
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/totalAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="$0.00" />
@@ -109,36 +108,36 @@
         android:text="@string/num_people_label" />
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/numberOfPeopleGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:checkedButton="@id/radioButton2"
+        android:checkedButton="@id/twoPeopleRB"
         android:orientation="vertical">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/onePersonRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="@string/one_person" />
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/twoPeopleRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/two_people" />
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/threePeopleRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/three_people" />
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/fourPeopleRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/four_people" />
     </RadioGroup>
 
     <LinearLayout
+        android:id="@+id/numberOfPeopleLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -149,7 +148,7 @@
             android:layout_height="wrap_content"
             android:text="@string/total_per_person" />
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/totalPerPersonAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="$0.00" />

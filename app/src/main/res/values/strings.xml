@@ -3,7 +3,6 @@
     <string name="num_people_label">Number of People</string>
     <string name="bill_amount">Bill Amount</string>
     <string name="tip_amount">Tip Amount</string>
-    <string name="tip_amount">Tip Amount</string>
     <string name="total">Total</string>
     <string name="tip_percent">Tip Percent</string>
     <string name="one_person">1 Person</string>
